@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Use relative path so CSS loads when served or opened from project root -->
+    <link href="./src/output.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  </head>
+  <body>
+    <!-- Hero Section Example -->
+    <div class="relative min-h-screen w-full overflow-hidden">
+      <div
+        style="
+          position: absolute;
+          inset: 0;
+          z-index: 0;
+          background: radial-gradient(
+              ellipse 120% 80% at 70% 20%,
+              rgba(255, 20, 147, 0.15) 0%,
+              transparent 50%
+            ),
+            radial-gradient(
+              ellipse 100% 60% at 30% 10%,
+              rgba(0, 255, 255, 0.12) 0%,
+              transparent 60%
+            ),
+            radial-gradient(
+              ellipse 90% 70% at 50% 0%,
+              rgba(138, 43, 226, 0.18) 0%,
+              transparent 65%
+            ),
+            radial-gradient(
+              ellipse 110% 50% at 80% 30%,
+              rgba(255, 215, 0, 0.08) 0%,
+              transparent 40%
+            ),
+            #000000;
+        "
+      ></div>
+      <!-- Navbar -->
+      <nav
+        class=" fixed top-0 left-0 w-full z-30 h-16 bg-transparent backdrop-blur-sm shadow-lg text-white"
+      >
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="flex items-center justify-between h-16">
+            <a href="#" class="text-2xl font-semibold text-white">Sotabdi</a>
+
+            <div class="hidden lg:flex space-x-8">
+              <a href="#home" class="text-white hover:text-gray-200 transition"
+                >Home</a
+              >
+              <a href="#about" class="text-white hover:text-gray-200 transition"
+                >About</a
+              >
+              <a
+                href="#projects"
+                class="text-white hover:text-gray-200 transition"
+                >Projects</a
+              >
+              <a
+                href="#contact"
+                class="text-white hover:text-gray-200 transition"
+                >Contact</a
+              >
+            </div>
+
+            <div class="lg:hidden">
+              <button
+                id="menu-btn"
+                type="button"
+                aria-label="Open menu"
+                title="Open menu"
+                class="p-2 rounded hover:bg-gray-800 focus:outline-none text-white focus:ring-2 focus:ring-offset-2 focus:ring-white/30"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile overlay menu (hidden by default) -->
+        <!-- Mobile overlay: animated using opacity + transform (avoid `hidden` to allow transitions) -->
+        <div
+          id="mobile-menu"
+          class="fixed inset-0 z-40 bg-transparent backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 ease-out"
+        >
+          <!-- Top row with brand and close button -->
+          <div class="flex justify-between items-center px-4 py-3">
+              <div class="p-1">
+              <a href="#" class="text-2xl font-semibold text-white">Sotabdi</a>
+            </div>
+            <button
+              id="menu-close"
+              type="button"
+              class="p-2 rounded-md text-white hover:bg-white/10 focus:outline-none opacity-0 transition-opacity duration-200"
+              aria-label="Close menu"
+              title="Close menu"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Panel: slide/fade animation -->
+          <div
+            id="mobile-menu-panel"
+            class="max-w-md mx-auto bg-black p-6 space-y-4 text-center transform translate-y-6 opacity-0 transition-all duration-300 ease-out"
+          >
+            <a
+              href="#home"
+              class="block py-3 text-xl text-white hover:text-gray-200"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="block py-3 text-xl text-white hover:text-gray-200"
+              >About</a
+            >
+            <a
+              href="#projects"
+              class="block py-3 text-xl text-white hover:text-gray-200"
+              >Projects</a
+            >
+            <a
+              href="#contact"
+              class="block py-3 text-xl text-white hover:text-gray-200"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
+
+
+
+      <!-- Hero Content -->
+
+      <div class="pt-8 relative z-10  flex flex-col min-h-screen ">
+        <!-- Main hero content -->
+        <div class=" flex-1 flex flex-col justify-center items-center px-4  sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+          <div class=" max-w-4xl w-full">
+            <!-- Tech icon badge -->
+            <div class=" flex items-center gap-2 mb-6 sm:mb-8 justify-center sm:justify-start">
+              <div class="p-2 rounded-lg bg-gradient-to-br from-cyan-500/20 to-pink-500/20 border border-cyan-500/30">
+                <!-- bolt icon -->
+                <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+              </div>
+              <span class="text-xs sm:text-sm font-semibold text-cyan-400 uppercase tracking-wider">
+                Tech Innovator
+              </span>
+            </div>
+
+            <!-- Name heading -->
+             <span class='text-white'>Hi, I'm</span>
+            <h1 class="text-4xl sm:text-5xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight">
+                
+              <span class="bg-gradient-to-r from-white via-white to-gray-300 bg-clip-text text-transparent">
+                Mariya Haider Shatabdi
+              </span>
+            </h1>
+
+            <!-- Title -->
+            <p class="text-lg sm:text-2xl font-light text-gray-300 mb-6 sm:mb-8">
+              IoT Solutions Designer & Hardware-Software Integration Specialist
+            </p>
+
+            <!-- Description -->
+            <p class="text-base sm:text-lg text-gray-400 mb-8 sm:mb-12 max-w-2xl leading-relaxed">
+              Dedicated student of Internet of Things (IoT) with practical experience in IoT solution design and
+              implementation. Skilled in hardware-software integration for real-world applications, driven by innovation
+              and problem-solving to create cutting-edge connected systems.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 mb-12 sm:mb-16">
+              <!-- Primary button - Cyan accent -->
+              <button type="button" class="px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-black font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400/40">
+                View My Work
+                <!-- arrow-up-right icon -->
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17l10-10M7 7h10v10"></path></svg>
+              </button>
+
+              <!-- Secondary button - Pink accent -->
+              <button type="button" class="px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-pink-500/20 to-purple-500/20 hover:from-pink-500/30 hover:to-purple-500/30 border border-pink-500/50 hover:border-pink-500/80 text-white font-semibold rounded-lg transition-all duration-300 flex items-center justify-center gap-2 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-400/30">
+                Get In Touch
+                <!-- mail icon -->
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+              </button>
+            </div>
+
+            <!-- Social links -->
+            <div class="flex gap-4 items-center ">
+              <p class="text-sm text-gray-500 hidden sm:block">Connect with me:</p>
+              <div class="flex gap-3 ">
+                <a
+                  href="#"
+                  class="p-2.5 sm:p-3 rounded-lg bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 hover:border-cyan-500/60 text-cyan-400 hover:text-cyan-300 transition-all duration-300 hover:scale-110"
+                  aria-label="LinkedIn"
+                >
+                  <i class="fa-brands fa-facebook text-amber-50 "></i>
+                </a>
+                <a
+                  href="#"
+                  class="p-2.5 sm:p-3 rounded-lg bg-gradient-to-br from-pink-500/10 to-purple-500/10 border border-pink-500/30 hover:border-pink-500/60 text-pink-400 hover:text-pink-300 transition-all duration-300 hover:scale-110"
+                  aria-label="GitHub"
+                >
+                  <!-- GitHub icon (inline svg) -->
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.35-1.3-1.71-1.3-1.71-1.06-.72.08-.71.08-.71 1.18.08 1.8 1.21 1.8 1.21 1.04 1.78 2.73 1.26 3.4.96.11-.75.41-1.26.74-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.05 11.05 0 012.9-.39c.98.01 1.98.13 2.9.39 2.2-1.5 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.41-5.25 5.69.42.36.8 1.07.8 2.16 0 1.56-.01 2.82-.01 3.2 0 .31.2.68.8.56A10.52 10.52 0 0023.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
+                </a>
+                <a
+                  href="#"
+                  class="p-2.5 sm:p-3 rounded-lg bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 hover:border-purple-500/60 text-purple-400 hover:text-purple-300 transition-all duration-300 hover:scale-110"
+                  aria-label="Email"
+                >
+                  <!-- mail icon -->
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="relative z-10 flex justify-center pb-8 animate-bounce">
+          <div class="text-gray-500 text-xs uppercase tracking-widest">Scroll to explore</div>
+        </div>
+      </div>
+
+      <!-- Hero Content end -->
+
+      
+    </div>
+    <!-- About section -->
+    <div class='min-h-screen bg-black text-white'>
+        <section class="min-h-screen bg-black flex items-center py-12 sm:py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 xl:gap-20 items-center">
+                
+                <!-- Left Content -->
+                <div class="space-y-6 sm:space-y-8 order-2 lg:order-1">
+                    <!-- Accent line -->
+                    <div class="flex items-center gap-3">
+                        <div class="w-1 h-10 sm:h-12 bg-gradient-to-b from-amber-600 to-transparent rounded-full"></div>
+                        <span class="text-amber-600 text-xs sm:text-sm font-semibold uppercase tracking-widest">About</span>
+                    </div>
+
+                    <!-- Simplified title and description -->
+                    <div>
+                        <h2 class="heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 text-white">Creative Developer</h2>
+                        <p class="text-base sm:text-lg text-gray-300 font-light italic">
+                            Crafting elegant digital experiences with precision and passion.
+                        </p>
+                    </div>
+                    
+                    <!-- Updated info display with cards instead of list -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 pt-2 sm:pt-4">
+                        <!-- Location -->
+                        <div class="border border-gray-800 rounded-lg p-3 sm:p-4 hover:border-amber-600/50 transition-all duration-300 group">
+                            <p class="text-amber-600 text-xs uppercase tracking-wider font-semibold mb-1">Location</p>
+                            <p class="text-gray-300 text-sm group-hover:text-amber-400 transition-colors">New York, USA</p>
+                        </div>
+                        
+                        <!-- Email -->
+                        <div class="border border-gray-800 rounded-lg p-3 sm:p-4 hover:border-amber-600/50 transition-all duration-300 group">
+                            <p class="text-amber-600 text-xs uppercase tracking-wider font-semibold mb-1">Email</p>
+                            <a href="mailto:hello@work.com" class="text-gray-300 text-sm hover:text-amber-400 transition-colors">hello@work.com</a>
+                        </div>
+                        
+                        <!-- Status -->
+                        <div class="border border-gray-800 rounded-lg p-3 sm:p-4 hover:border-amber-600/50 transition-all duration-300 group">
+                            <p class="text-amber-600 text-xs uppercase tracking-wider font-semibold mb-1">Status</p>
+                            <div class="flex items-center gap-2">
+                                <span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
+                                <span class="text-gray-300 text-sm group-hover:text-amber-400 transition-colors">Available</span>
+                            </div>
+                        </div>
+
+                        <!-- Experience -->
+                        <div class="border border-gray-800 rounded-lg p-3 sm:p-4 hover:border-amber-600/50 transition-all duration-300 group">
+                            <p class="text-amber-600 text-xs uppercase tracking-wider font-semibold mb-1">Experience</p>
+                            <p class="text-gray-300 text-sm group-hover:text-amber-400 transition-colors">5+ Years</p>
+                        </div>
+                    </div>
+
+                    <!-- CTA Button -->
+                    <button class="mt-4 sm:mt-6 w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-amber-600 hover:bg-amber-700 text-black font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 text-sm sm:text-base">
+                        Get In Touch
+                    </button>
+                </div>
+                
+                <!-- Right Image Section -->
+                <div class="relative order-1 lg:order-2 flex justify-center">
+                    <div class="w-full max-w-sm sm:max-w-md">
+                        <!-- Added premium shape design with blob animation and decorative elements -->
+                        <div class="relative aspect-square">
+                            <!-- Animated blob shape background -->
+                            <div class="absolute inset-0 shape-blob rounded-3xl lg:rounded-full opacity-20" style="background: radial-gradient(circle at 30% 70%, #d97706 0%, #92400e 100%);"></div>
+                            
+                            <!-- Image container with glow effect -->
+                            <div class="img-container absolute inset-0 rounded-3xl lg:rounded-full overflow-hidden border border-gray-800 hover:border-amber-600/50 transition-all duration-300 relative">
+                                <div class="relative w-full h-full bg-gradient-to-br from-gray-900 to-black flex items-center justify-center overflow-hidden">
+                                    <img 
+                                        src="/src/img/unnamed.jpg" 
+                                        alt="Professional portrait" 
+                                        class="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
+                                    />
+                                </div>
+                            </div>
+
+                            <!-- Added decorative geometric shapes -->
+                            <!-- Top-left circle -->
+                            <div class="hidden lg:block absolute -top-4 -left-4 w-12 h-12 border border-amber-600/30 rounded-full"></div>
+                            
+                            <!-- Bottom-right circle -->
+                            <div class="hidden lg:block absolute -bottom-4 -right-4 w-16 h-16 border border-amber-600/20 rounded-full"></div>
+                            
+                            <!-- Right square -->
+                            <div class="hidden lg:block absolute top-1/3 -right-6 w-20 h-20 border border-amber-600/15 rounded-lg"></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    </div>
+       
+      <!-- About section end -->
+
+    <script type="module" src="dist/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </body>
+</html>
