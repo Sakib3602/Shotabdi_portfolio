@@ -1,5 +1,13 @@
 "use strict";
+//  javascript ar type declare kore 
 var _a;
+// const elements = {
+//     menuBtn: document.getElementById('menu-btn'),
+//     menuClose: document.getElementById('menu-close'),
+//     mobileMenu: document.getElementById('mobile-menu'),
+//     mobileLinks: document.querySelectorAll('#mobile-menu a'),
+// };
+// type declare korsi menu elements 
 const elements = {
     menuBtn: document.getElementById('menu-btn'),
     menuClose: document.getElementById('menu-close'),

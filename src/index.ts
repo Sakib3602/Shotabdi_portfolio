@@ -1,3 +1,8 @@
+
+
+//  javascript ar type declare kore 
+
+// interface , type 
 interface MenuElements {
     menuBtn: HTMLButtonElement | null;
     menuClose: HTMLButtonElement | null;
@@ -5,6 +10,15 @@ interface MenuElements {
     mobileLinks: NodeListOf<HTMLAnchorElement>;
 }
 
+// const elements = {
+//     menuBtn: document.getElementById('menu-btn'),
+//     menuClose: document.getElementById('menu-close'),
+//     mobileMenu: document.getElementById('mobile-menu'),
+//     mobileLinks: document.querySelectorAll('#mobile-menu a'),
+// };
+
+
+// type declare korsi menu elements 
 const elements: MenuElements = {
     menuBtn: document.getElementById('menu-btn') as HTMLButtonElement | null,
     menuClose: document.getElementById('menu-close') as HTMLButtonElement | null,
