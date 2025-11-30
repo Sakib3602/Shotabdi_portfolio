@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mariya Haider</title>
+    <link rel="icon" type="image/png" href="./src/img/t.png" />
     <!-- Use relative path so CSS loads when served or opened from project root -->
 
     <!-- input.css ami tailwind set kosi... output.css  link korsi ...connect korsi -->
@@ -56,7 +57,8 @@
       >
         <div class="max-w-7xl mx-auto px-4">
           <div class="flex items-center justify-between h-16">
-            <a href="#" class="text-2xl font-semibold text-white">Sotabdi</a>
+            <a href="#home" class="text-2xl font-semibold text-white">💕Mariya💕</a>
+
 
             <div class="hidden lg:flex space-x-8">
               <a href="#home" class="text-white hover:text-gray-200 transition"
@@ -64,6 +66,9 @@
               >
               <a href="#about" class="text-white hover:text-gray-200 transition"
                 >About</a
+              >
+              <a href="#skills" class="text-white hover:text-gray-200 transition"
+                >Skills</a
               >
               <a
                 href="#projects"
@@ -111,7 +116,7 @@
           <!-- Top row with brand and close button -->
           <div class="flex justify-between items-center px-4 py-3">
             <div class="p-1">
-              <a href="#" class="text-2xl font-semibold text-white">Sotabdi</a>
+              <a href="#" class="text-2xl font-semibold text-white">💕Mariya💕</a>
             </div>
             <button
               id="menu-close"
@@ -152,6 +157,11 @@
               >About</a
             >
             <a
+              href="#skills"
+              class="block py-3 text-xl text-white hover:text-gray-200"
+              >Skills</a
+            >
+            <a
               href="#projects"
               class="block py-3 text-xl text-white hover:text-gray-200"
               >Projects</a
@@ -167,7 +177,7 @@
 
       <!-- Hero Content -->
 
-      <div class="pt-8 relative z-10 flex flex-col min-h-screen">
+      <div id="home" class="pt-8 relative z-10 flex flex-col min-h-screen">
         <!-- Main hero content -->
         <div
           class="flex-1 flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20"
@@ -211,13 +221,13 @@
               <span
                 class="bg-linear-to-r from-white via-white to-gray-300 bg-clip-text text-transparent"
               >
-                Mariya Haider Shatabdi
+                Mariya Haider Shatabdi 
               </span>
             </h1>
 
             <!-- Title -->
             <p
-              class="text-lg sm:text-2xl font-light text-gray-300 mb-6 sm:mb-8"
+              class="text-lg sm:text-2xl font-light text-red-300 mb-6 sm:mb-8"
             >
               IoT Solutions Designer & Hardware-Software Integration Specialist
             </p>
@@ -232,11 +242,14 @@
               by innovation and problem-solving to create cutting-edge connected
               systems.
             </p>
+            
 
             <!-- CTA Buttons -->
             <div class="flex flex-col sm:flex-row gap-4 mb-12 sm:mb-16">
               <!-- Primary button - Cyan accent -->
-              <button
+              <a href="#projects">
+                <button
+              
                 type="button"
                 class="px-6 sm:px-8 py-3 sm:py-4 bg-linear-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-black font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400/40"
               >
@@ -257,9 +270,11 @@
                   ></path>
                 </svg>
               </button>
+              </a>
 
               <!-- Secondary button - Pink accent -->
-              <button
+             <a href="#contact">
+               <button
                 type="button"
                 class="px-6 sm:px-8 py-3 sm:py-4 bg-linear-to-r from-pink-500/20 to-purple-500/20 hover:from-pink-500/30 hover:to-purple-500/30 border border-pink-500/50 hover:border-pink-500/80 text-white font-semibold rounded-lg transition-all duration-300 flex items-center justify-center gap-2 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-400/30"
               >
@@ -280,6 +295,7 @@
                   ></path>
                 </svg>
               </button>
+             </a>
             </div>
 
             <!-- Social links -->
@@ -289,15 +305,16 @@
               </p>
               <div class="flex gap-3">
                 <a
-                  href="#"
-                  class="p-2.5 sm:p-3 rounded-lg bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 hover:border-cyan-500/60 text-cyan-400 hover:text-cyan-300 transition-all duration-300 hover:scale-110"
+                  href="https://www.linkedin.com/in/mariyahaiders/"
+                  class="p-2.5 sm:p-3 rounded-lg bg-linear-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 hover:border-cyan-500/60 text-cyan-400 hover:text-cyan-300 transition-all duration-300 hover:scale-110"
                   aria-label="LinkedIn"
                 >
-                  <i class="fa-brands fa-facebook text-amber-50"></i>
+                  
+                  <i class="fa-brands fa-linkedin "></i>
                 </a>
                 <a
-                  href="#"
-                  class="p-2.5 sm:p-3 rounded-lg bg-gradient-to-br from-pink-500/10 to-purple-500/10 border border-pink-500/30 hover:border-pink-500/60 text-pink-400 hover:text-pink-300 transition-all duration-300 hover:scale-110"
+                  href="https://github.com/mariyahaider100"
+                  class="p-2.5 sm:p-3 rounded-lg bg-linear-to-br from-pink-500/10 to-purple-500/10 border border-pink-500/30 hover:border-pink-500/60 text-pink-400 hover:text-pink-300 transition-all duration-300 hover:scale-110"
                   aria-label="GitHub"
                 >
                   <!-- GitHub icon (inline svg) -->
@@ -313,25 +330,12 @@
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.facebook.com/shatabdi.haider"
                   class="p-2.5 sm:p-3 rounded-lg bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 hover:border-purple-500/60 text-purple-400 hover:text-purple-300 transition-all duration-300 hover:scale-110"
                   aria-label="Email"
                 >
                   <!-- mail icon -->
-                  <svg
-                    class="w-5 h-5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                    ></path>
-                  </svg>
+                 <i class="fa-brands fa-facebook "></i>
                 </a>
               </div>
             </div>
@@ -350,6 +354,7 @@
     </div>
     <!-- About section -->
     <div
+    id="about"
       class="min-h-screen bg-black text-white selection:bg-violet-500 selection:text-white overflow-hidden relative"
     >
       <div
@@ -419,7 +424,7 @@
                   >
                     Location
                   </p>
-                  <p class="text-gray-200 font-medium">New York, USA</p>
+                  <p class="text-gray-200 font-medium">Helsinki, Finland</p>
                 </div>
 
                 <div
@@ -434,9 +439,9 @@
                     Email
                   </p>
                   <a
-                    href="mailto:hello@work.com"
+                    href="mailto:mariyavnc@gmail.com"
                     class="text-gray-200 font-medium hover:text-white transition-colors"
-                    >hello@work.com</a
+                    >mariyavnc@gmail.com</a
                   >
                 </div>
 
@@ -475,11 +480,24 @@
                   >
                     Experience
                   </p>
-                  <p class="text-gray-200 font-medium">5+ Years</p>
+                  <p class="text-gray-200 font-medium">1+ Years</p>
+                </div>
+                <div
+                  class="group relative p-4 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 hover:border-violet-500/30"
+                >
+                  <div
+                    class="absolute inset-0 bg-linear-to-r from-violet-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-xl"
+                  ></div>
+                  <p
+                    class="text-violet-400 text-xs uppercase tracking-wider font-bold mb-1"
+                  >
+                    Education
+                  </p>
+                  <p class="text-gray-200 font-medium">Savonia University Of Applied Sciences</p>
                 </div>
               </div>
 
-              <div class="pt-4">
+              <!-- <div class="pt-4">
                 <button
                   class="group relative inline-flex items-center justify-center px-8 py-4 font-semibold text-white transition-all duration-200 bg-transparent font-pj rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-600 ring-offset-black"
                 >
@@ -506,7 +524,7 @@
                     </svg>
                   </span>
                 </button>
-              </div>
+              </div> -->
             </div>
 
             <!-- aikhan thika suru hoise right side ar kahini picture ar -->
@@ -515,7 +533,7 @@
               class="relative order-1 lg:order-2 flex justify-center lg:justify-end"
             >
               <div class="relative w-full max-w-sm sm:max-w-md">
-                duita dive nisi dui side a design ar jonno
+                <!-- duita dive nisi dui side a design ar jonno -->
                 <div
                   class="absolute -top-10 -right-10 w-32 h-32 bg-violet-600 rounded-full blur-[60px] opacity-40 animate-pulse"
                 ></div>
@@ -531,7 +549,7 @@
                   ></div>
 
                   <img
-                    src="/src/img/unnamed.jpg"
+                    src="/src/img/ss.jpg"
                     alt="Professional portrait"
                     class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out transform group-hover:scale-105"
                   />
@@ -566,7 +584,8 @@
     <!-- About section end -->
 
     <!-- skill section -->
-    <section class="py-24 bg-black relative overflow-hidden">
+    <section
+     id="skills" class="py-24 bg-black relative overflow-hidden">
       <div
         class="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"
       ></div>
@@ -834,6 +853,7 @@
 
     <!-- project section -->
     <div
+      id="projects"
       class="bg-[#050505] font-sans text-gray-300 min-h-screen p-4 md:p-10 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-black [&::-webkit-scrollbar-thumb]:bg-gray-800 hover:[&::-webkit-scrollbar-thumb]:bg-gray-600"
     >
       <!-- Header Section: Title change kora hoise "MY PROJECTS" e -->
@@ -886,7 +906,7 @@
 
             <!-- Waste Detection Image ta ekhane add kora hoise -->
             <img
-              src="./src/img/p.jpg"
+              src="./src/img/p1.jpg"
               alt="Smart Waste Detection Interface"
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100 grayscale group-hover:grayscale-0"
             />
@@ -902,7 +922,7 @@
           <div class="relative p-6 md:p-8 z-20 bg-[#111111]">
             <div class="flex items-center justify-between mb-4">
               <h3 class="font-['Orbitron'] text-2xl text-white font-bold">
-                ECO-SIGHT V1
+                Waste Detection Using YoloE
               </h3>
               <span
                 class="text-[#00f3ff] text-xs border border-gray-700 px-2 py-1 rounded"
@@ -958,7 +978,7 @@
           </div>
         </article>
 
-        <!-- ================= PROJECT 2: EXCAVATOR ================= -->
+       
         <!-- border-warn-orange -> border-[#ffae00] -->
         <article
           class="group relative bg-[#111111] border border-gray-800 hover:border-[#ffae00] transition-all duration-300 rounded-lg overflow-hidden"
@@ -977,7 +997,7 @@
 
             <!-- Excavator Image ta ekhane add kora hoise -->
             <img
-              src="./src/img/p1.jpg"
+              src="./src/img/p.jpg"
               alt="RC Excavator Project"
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100 grayscale group-hover:grayscale-0"
             />
@@ -993,7 +1013,7 @@
           <div class="relative p-6 md:p-8 z-20 bg-[#111111]">
             <div class="flex items-center justify-between mb-4">
               <h3 class="font-['Orbitron'] text-2xl text-white font-bold">
-                TELE-BOT X5
+                RPi Excavator
               </h3>
               <span
                 class="text-[#ffae00] text-xs border border-gray-700 px-2 py-1 rounded"
@@ -1052,7 +1072,8 @@
     <!-- project section end -->
 
     <!-- contact section start -->
-     <div class="bg-black text-white min-h-screen flex items-center justify-center font-sans antialiased selection:bg-[#01F3FF] selection:text-black">
+     <div
+      id="contact" class="bg-black text-white min-h-screen flex items-center justify-center font-sans antialiased selection:bg-[#01F3FF] selection:text-black">
 
     <!-- Main Section Container -->
     <section class="w-full max-w-6xl mx-auto px-6 py-20">
@@ -1062,7 +1083,7 @@
             <!-- Header -->
             <div class="text-center space-y-6 max-w-2xl mx-auto">
                 <h2 class="text-5xl md:text-7xl font-bold tracking-tighter text-white">
-                    Get in <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#01F3FF] to-blue-600">Touch.</span>
+                    Get in <span class="text-transparent bg-clip-text bg-linear-to-r from-[#01F3FF] to-blue-600">Touch.</span>
                 </h2>
                 <p class="text-lg md:text-xl text-neutral-400 leading-relaxed">
                     Ready to start your next project? I'm currently open for freelance opportunities.
@@ -1073,8 +1094,8 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
                 
                 <!-- Email Item -->
-                <a href="mailto:hello@example.com" class="group relative p-8 rounded-3xl bg-neutral-950 border border-neutral-900 hover:border-[#01F3FF]/50 transition-all duration-500 flex flex-col items-center text-center overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-b from-[#01F3FF]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <a href="mailto:mariyavnc@gmail.com" class="group relative p-8 rounded-3xl bg-neutral-950 border border-neutral-900 hover:border-[#01F3FF]/50 transition-all duration-500 flex flex-col items-center text-center overflow-hidden">
+                    <div class="absolute inset-0 bg-linear-to-b from-[#01F3FF]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     
                     <div class="relative w-16 h-16 rounded-2xl bg-black border border-neutral-800 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:border-[#01F3FF] transition-all duration-300 shadow-[0_0_15px_rgba(1,243,255,0.1)] group-hover:shadow-[0_0_25px_rgba(1,243,255,0.4)]">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#01F3FF]">
@@ -1083,12 +1104,12 @@
                     </div>
                     
                     <h3 class="relative text-[#FFD700] uppercase tracking-widest text-xs font-bold mb-2">Email Me</h3>
-                    <p class="relative text-xl md:text-2xl font-semibold text-white group-hover:text-[#01F3FF] transition-colors duration-300 break-all">hello@example.com</p>
+                    <p class="relative text-xl md:text-2xl font-semibold text-white group-hover:text-[#01F3FF] transition-colors duration-300 break-all">mariyavnc@gmail.com</p>
                 </a>
 
                 <!-- Phone Item -->
                 <a href="tel:+1234567890" class="group relative p-8 rounded-3xl bg-neutral-950 border border-neutral-900 hover:border-[#01F3FF]/50 transition-all duration-500 flex flex-col items-center text-center overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-b from-[#01F3FF]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="absolute inset-0 bg-linear-to-b from-[#01F3FF]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                     <div class="relative w-16 h-16 rounded-2xl bg-black border border-neutral-800 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:border-[#01F3FF] transition-all duration-300 shadow-[0_0_15px_rgba(1,243,255,0.1)] group-hover:shadow-[0_0_25px_rgba(1,243,255,0.4)]">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#01F3FF]">
@@ -1097,12 +1118,12 @@
                     </div>
 
                     <h3 class="relative text-[#FFD700] uppercase tracking-widest text-xs font-bold mb-2">Call Me</h3>
-                    <p class="relative text-xl md:text-2xl font-semibold text-white group-hover:text-[#01F3FF] transition-colors duration-300">+1 (555) 000-0000</p>
+                    <p class="relative text-xl md:text-2xl font-semibold text-white group-hover:text-[#01F3FF] transition-colors duration-300">*************</p>
                 </a>
 
                 <!-- Location Item -->
                 <div class="group relative p-8 rounded-3xl bg-neutral-950 border border-neutral-900 hover:border-[#01F3FF]/50 transition-all duration-500 flex flex-col items-center text-center overflow-hidden cursor-default">
-                    <div class="absolute inset-0 bg-gradient-to-b from-[#01F3FF]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="absolute inset-0 bg-linear-to-b from-[#01F3FF]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                     <div class="relative w-16 h-16 rounded-2xl bg-black border border-neutral-800 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:border-[#01F3FF] transition-all duration-300 shadow-[0_0_15px_rgba(1,243,255,0.1)] group-hover:shadow-[0_0_25px_rgba(1,243,255,0.4)]">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#01F3FF]">
@@ -1111,7 +1132,7 @@
                     </div>
 
                     <h3 class="relative text-[#FFD700] uppercase tracking-widest text-xs font-bold mb-2">Location</h3>
-                    <p class="relative text-xl md:text-2xl font-semibold text-white group-hover:text-[#01F3FF] transition-colors duration-300">New York, NY</p>
+                    <p class="relative text-xl md:text-2xl font-semibold text-white group-hover:text-[#01F3FF] transition-colors duration-300">Helsinki, Finland</p>
                 </div>
 
             </div>
@@ -1122,15 +1143,15 @@
                 
                 <div class="flex flex-wrap justify-center gap-6">
                     <!-- LinkedIn -->
-                    <a href="#" class="group relative flex items-center gap-3 px-6 py-3 rounded-full bg-neutral-900 border border-neutral-800 hover:border-[#FFD700]/50 transition-all duration-300">
+                    <a href="https://www.linkedin.com/in/mariyahaiders/" class="group relative flex items-center gap-3 px-6 py-3 rounded-full bg-neutral-900 border border-neutral-800 hover:border-[#FFD700]/50 transition-all duration-300">
                         <div class="text-[#01F3FF] group-hover:text-[#FFD700] transition-colors duration-300">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                            <svg xmlns="https://www.linkedin.com/in/mariyahaiders/" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
                         </div>
                         <span class="text-white font-medium group-hover:text-[#FFD700] transition-colors duration-300">LinkedIn</span>
                     </a>
 
                     <!-- GitHub -->
-                    <a href="#" class="group relative flex items-center gap-3 px-6 py-3 rounded-full bg-neutral-900 border border-neutral-800 hover:border-[#FFD700]/50 transition-all duration-300">
+                    <a href="https://github.com/mariyahaider100" class="group relative flex items-center gap-3 px-6 py-3 rounded-full bg-neutral-900 border border-neutral-800 hover:border-[#FFD700]/50 transition-all duration-300">
                         <div class="text-[#01F3FF] group-hover:text-[#FFD700] transition-colors duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
                         </div>
@@ -1146,18 +1167,17 @@
                     </a>
 
                     <!-- Instagram -->
-                    <a href="#" class="group relative flex items-center gap-3 px-6 py-3 rounded-full bg-neutral-900 border border-neutral-800 hover:border-[#FFD700]/50 transition-all duration-300">
+                    <!-- <a href="#" class="group relative flex items-center gap-3 px-6 py-3 rounded-full bg-neutral-900 border border-neutral-800 hover:border-[#FFD700]/50 transition-all duration-300">
                         <div class="text-[#01F3FF] group-hover:text-[#FFD700] transition-colors duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
                         </div>
                         <span class="text-white font-medium group-hover:text-[#FFD700] transition-colors duration-300">Instagram</span>
-                    </a>
+                    </a> -->
                 </div>
             </div>
 
         </div>
     </section>
-
 </div>
     <!-- contact section end -->
 

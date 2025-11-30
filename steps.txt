@@ -6,7 +6,6 @@ v20.13.1
 =============
 E:\Sotabdi_Portfolio>npm init -y
 Wrote to E:\Sotabdi_Portfolio\package.json:
-
 {
   "name": "sotabdi_portfolio",
   "version": "1.0.0",
@@ -19,6 +18,7 @@ Wrote to E:\Sotabdi_Portfolio\package.json:
   "license": "ISC",
   "description": ""
 }
+
 ================
 
 then tailwind install Link: https://tailwindcss.com/docs/installation/tailwind-cli
